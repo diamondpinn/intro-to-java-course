@@ -112,7 +112,7 @@ public class FlowControlExercises {
         FlowControlExercises exercises = new FlowControlExercises();
 
         // Example usage of the fizzBuzz method
-        List<Integer> fizzBuzzNumbers = List.of(1, 3, 5, 15, 16);
+        List<Integer> fizzBuzzNumbers = List.of(1, 3, 5,  8, 9, 10, 12, 13, 15, 16);
         List<String> fizzBuzzResult = exercises.fizzBuzz(fizzBuzzNumbers);
         System.out.println("FizzBuzz: " + fizzBuzzResult);  // Output: [1, Fizz, Buzz, FizzBuzz, 16]
 
