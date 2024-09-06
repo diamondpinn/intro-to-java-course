@@ -21,20 +21,11 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <configuration>
             <testExcludes>
-<<<<<<< HEAD
-              <!-- <testExclude>**/ShapeTest.java</testExclude> -->
-              <testExclude>**/PaintTest.java</testExclude>
-=======
               <!-- <testExclude>**/PaintTest.java</testExclude> -->
->>>>>>> 1d9ab68fe3a3a855c5acfd54fb154e7ae0b525ea
             </testExcludes>
           </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
   </build>
-<<<<<<< HEAD
-
-=======
->>>>>>> 1d9ab68fe3a3a855c5acfd54fb154e7ae0b525ea
 </project>
