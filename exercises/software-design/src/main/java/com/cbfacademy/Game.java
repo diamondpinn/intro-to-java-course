@@ -1,12 +1,13 @@
 package com.cbfacademy;
 
 /**
- * Represents an object that can be played.
+ * Represents a game that can be played.
  */
 public interface Game {
     /**
-     * Plays the game.
-     * @return A string representing the winner of the game.
+     * Plays the game and returns the winner's name.
+     *
+     * @return The name of the winner.
      */
     String play();
 }

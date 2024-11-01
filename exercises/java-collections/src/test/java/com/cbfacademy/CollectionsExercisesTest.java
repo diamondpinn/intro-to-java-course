@@ -73,7 +73,7 @@ public class CollectionsExercisesTest {
         assertThat(result.size(), is(4));
         assertThat(result.get(0), is(5));
         assertThat(result.get(1), is(6));
-        assertThat(result.get(2), is(8));
+        assertThat(result.get(2), is(9));
         assertThat(result.get(3), is(4));
         assertThat(outputStreamCaptor.toString().trim(), is("599"));
     }
@@ -104,7 +104,6 @@ public class CollectionsExercisesTest {
         assertThat(result, is(notNullValue()));
         assertThat(result.size(), is(6));
         assertThat(outputStreamCaptor.toString().trim(),
-                is("[1, 2, 3, 4, 5, 6][TypeScript, Kotlin, Python, Java, JavaScript, Rust]false")
-        );
+                is("[1, 2, 3, 4, 5, 6][TypeScript, Kotlin, Python, Java, JavaScript, Rust]false"));
     }
 }

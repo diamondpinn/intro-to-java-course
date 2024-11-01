@@ -1,6 +1,5 @@
 package com.cbfacademy;
 
-import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -10,7 +9,7 @@ public class FlowControlExercises {
     public List<String> fizzBuzz(List<Integer> numbers) {
         // Create a new list to store the results
         List<String> result = new ArrayList<>();
-        
+
         // Iterate over each element in the input list
         for (Integer number : numbers) {
             // Check if the number is divisible by both 3 and 5
@@ -30,7 +29,7 @@ public class FlowControlExercises {
                 result.add(number.toString());
             }
         }
-        
+
         // Return the constructed list
         return result;
     }
@@ -94,12 +93,12 @@ public class FlowControlExercises {
     public List<Integer> reverse(ArrayList<Integer> numbers) {
         // Create a new list to hold the reversed elements
         List<Integer> reversedList = new ArrayList<>();
-        
+
         // Iterate over the input list in reverse order and add elements to the new list
         for (int i = numbers.size() - 1; i >= 0; i--) {
             reversedList.add(numbers.get(i));
         }
-        
+
         // Return the reversed list
         return reversedList;
     }
@@ -112,24 +111,23 @@ public class FlowControlExercises {
         FlowControlExercises exercises = new FlowControlExercises();
 
         // Example usage of the fizzBuzz method
-        List<Integer> fizzBuzzNumbers = List.of(1, 3, 5,  8, 9, 10, 12, 13, 15, 16);
+        List<Integer> fizzBuzzNumbers = List.of(1, 3, 5, 8, 9, 10, 12, 13, 15, 16);
         List<String> fizzBuzzResult = exercises.fizzBuzz(fizzBuzzNumbers);
-        System.out.println("FizzBuzz: " + fizzBuzzResult);  // Output: [1, Fizz, Buzz, FizzBuzz, 16]
+        System.out.println("FizzBuzz: " + fizzBuzzResult); // Output: [1, Fizz, Buzz, FizzBuzz, 16]
 
         // Example usage of the whichMonth method
-        System.out.println("Month 1: " + exercises.whichMonth(1));  // Output: January
+        System.out.println("Month 1: " + exercises.whichMonth(1)); // Output: January
         System.out.println("Month 12: " + exercises.whichMonth(12)); // Output: December
-        System.out.println("Month 0: " + exercises.whichMonth(0));  // Output: Invalid month number
+        System.out.println("Month 0: " + exercises.whichMonth(0)); // Output: Invalid month number
         System.out.println("Month 13: " + exercises.whichMonth(13)); // Output: Invalid month number
 
         // Example usage of the sumOfOddsAndSumOfEvens method
         Map<String, Integer> sumResult = exercises.sumOfOddsAndSumOfEvens();
-        System.out.println("Sum of Evens and Odds: " + sumResult);  // Output: {SumOfEvens=2550, SumOfOdds=2500}
+        System.out.println("Sum of Evens and Odds: " + sumResult); // Output: {SumOfEvens=2550, SumOfOdds=2500}
 
         // Example usage of the reverse method
         ArrayList<Integer> reverseNumbers = new ArrayList<>(List.of(1, 2, 3, 4, 5));
         List<Integer> reversedResult = exercises.reverse(reverseNumbers);
-        System.out.println("Reversed: " + reversedResult);  // Output: [5, 4, 3, 2, 1]
+        System.out.println("Reversed: " + reversedResult); // Output: [5, 4, 3, 2, 1]
     }
 }
-

@@ -1,12 +1,16 @@
 package com.cbfacademy;
 
+/**
+ * Factory class for creating player instances.
+ */
 public class PlayerFactory {
     /**
-     * Creates a new player.
+     * Creates a new player with the specified name.
      *
-     * @return A new player.
+     * @param name The name of the player.
+     * @return A new player instance.
      */
-    public static DicePlayer create() {
-        return new DicePlayer();
+    public static Player create(String name) {
+        return new DicePlayer(name);
     }
 }

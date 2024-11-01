@@ -1,21 +1,30 @@
 package com.cbfacademy;
 
-public class DicePlayer {
-    private String name;
+import java.util.Random;
 
+/**
+ * Represents a player that rolls a dice.
+ */
+public class DicePlayer implements Player {
+    private String name;
+    private Random random = new Random();
+
+    public DicePlayer(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public int roll() {
+        return random.nextInt(6) + 1; // Simulates a dice roll
+    }
+
+    @Override
     public String getName() {
         return name;
     }
 
+    @Override
     public void setName(String name) {
-        this.name = name;
-    }
-
-    public int roll() {
-        int score = (int) (Math.random() * 6) + 1;
-        
-        System.out.println(name + " rolled a " + score);
-
-        return score;
+        this.name = name; // Set the player's name
     }
 }

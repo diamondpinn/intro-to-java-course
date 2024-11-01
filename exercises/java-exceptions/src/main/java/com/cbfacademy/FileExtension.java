@@ -18,12 +18,12 @@ public class FileExtension {
         for (String filename : filenames) {
             try {
                 if (check(filename)) {
-                    resultMap.put(filename, 1);
+                    resultMap.put(filename, 1); // Valid .java file
                 } else {
-                    resultMap.put(filename, 0);
+                    resultMap.put(filename, 0); // Invalid file extension
                 }
             } catch (FilenameException e) {
-                resultMap.put(filename, -1);
+                resultMap.put(filename, -1); // Exception occurred
             }
         }
         return resultMap;
@@ -39,4 +39,3 @@ public class FileExtension {
         }
     }
 }
-

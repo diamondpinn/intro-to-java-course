@@ -7,9 +7,8 @@ import java.util.Map;
 
 /**
  * A simple IoC container that uses a map to store mappings between interfaces
- * and their implementations.
- * It provides methods to register mappings, create instances of interfaces, and
- * retrieve instances of interfaces.
+ * and their implementations. It provides methods to register mappings, create
+ * instances of interfaces, and retrieve instances of interfaces.
  */
 public class SimpleContainer {
     private final Map<Class<?>, Class<?>> types;
@@ -29,6 +28,7 @@ public class SimpleContainer {
     public SimpleContainer(Map<Class<?>, Class<?>> types) {
         this.types = types;
     }
+
     /**
      * Register a mapping between an interface and its implementation.
      *
